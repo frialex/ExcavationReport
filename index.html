@@ -1,16 +1,11 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html ng-app>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
@@ -20,24 +15,39 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript" src="js/vendor/jquery.mobile-1.3.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+
+
 </head>
-<body>
-
-
+<body ng-controller="FormController">
     <div data-role="page" id="firstPage">    
-        <div data-role="navbar">
-            <ul>
-                <li><a href="#" class="ui-btn-active">Inspectors Name</a></li>
-                <li><a href="#">Area</a></li>
-                <li><a href="#">From</a></li>
-                <li><a href="#">To</a></li>
-            </ul>
-            <a href="#secondPage">Go to second page</a>
+        <div data-role="panel" id="setupPanel" data-display="push">
+            <input type="text" ng-model="MFData.inspectorName" placeholder="Inspector's Name">
+            <input type="text" ng-model="MFData.area" placeholder="Area">
+            <label for="fromDate">From</label>
+            <input name="fromDate" type="date" ng-model="MFData.from" placeholder="From">
+            <label for="toDate">To</label>
+            <input name="toDate" type="date" ng-model="MFData.to" placeholder="To">
+        </div>
+
+        <div data-role="header">
+            <a href="#setupPanel" data-icon="gear">Setup</a>
+            <h2>Excavation Report</h2>
+            <a ng-click="saveStateToLocal()" href="#" data-icon="check">Save</a>
+        </div>
+
+        <div data-role="content">     
+            <p>Name (Model): {{MFData.inspectorName}}</p>            
+            <p>Area: {{MFData.area}}</p>
+            <p>From: {{MFData.from}}</p>
+            <p>To  : {{MFData.to}}</p>
+            
         </div>
     </div>
 
+
     <div data-role="page" id="secondPage">
-        <h2>Second Page</h2>
+        <h2>Put the </h2>
     </div>
 
 
