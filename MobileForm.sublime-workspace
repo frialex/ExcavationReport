@@ -147,23 +147,15 @@
 			"file": "js/main.js",
 			"settings":
 			{
-				"buffer_size": 319,
+				"buffer_size": 351,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/frialex/Library/Application Support/Sublime Text 2/Packages/Alignment/Default (OSX).sublime-keymap",
-			"settings":
-			{
-				"buffer_size": 57,
-				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2021,
+				"buffer_size": 2530,
 				"line_ending": "Unix"
 			}
 		}
@@ -276,6 +268,7 @@
 	},
 	"file_history":
 	[
+		"/Users/frialex/Library/Application Support/Sublime Text 2/Packages/Alignment/Default (OSX).sublime-keymap",
 		"/Users/frialex/Library/Application Support/Sublime Text 2/Packages/Alignment/Base File.sublime-settings",
 		"/Users/frialex/Documents/Work/Mobile_Form/js/main.js",
 		"/Users/frialex/dev/TicTacToe/singleboard.js",
@@ -309,6 +302,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"button",
+			"h3",
+			"div",
+			"li",
+			"ul",
+			"div",
 			"form",
 			" =",
 			"form",
@@ -435,7 +434,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -443,15 +442,15 @@
 					"file": "js/main.js",
 					"settings":
 					{
-						"buffer_size": 319,
+						"buffer_size": 351,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								218,
-								218
+								248,
+								248
 							]
 						],
 						"settings":
@@ -466,44 +465,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/Users/frialex/Library/Application Support/Sublime Text 2/Packages/Alignment/Default (OSX).sublime-keymap",
-					"settings":
-					{
-						"buffer_size": 57,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 2021,
+						"buffer_size": 2530,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1573,
-								1573
+								1881,
+								1881
 							]
 						],
 						"settings":
@@ -513,7 +486,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 256.0,
+						"translation.y": 249.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -575,11 +548,19 @@
 				"js/main.js"
 			],
 			[
-				"m",
+				"int",
+				"index.html"
+			],
+			[
+				"man",
 				"js/main.js"
 			],
 			[
 				"main",
+				"js/main.js"
+			],
+			[
+				"m",
 				"js/main.js"
 			],
 			[

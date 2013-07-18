@@ -36,18 +36,36 @@
             <a ng-click="saveStateToLocal()" href="#" data-icon="check">Save</a>
         </div>
 
-        <div data-role="content">     
-            <p>Name (Model): {{MFData.inspectorName}}</p>            
-            <p>Area: {{MFData.area}}</p>
-            <p>From: {{MFData.from}}</p>
-            <p>To  : {{MFData.to}}</p>
-            
+        <div data-role="content">               
+            <div data-role="collapsible-set">
+                <a href="#secondPage" data-role="button">Add new work order</a>
+
+                <div data-role="collapsible" ng-repreat="work in MFData.workList">
+                    <h3>{{work}}</h3>
+                    <p>{{work}}</p>
+                </div>
+            </div>
         </div>
+
     </div>
 
 
-    <div data-role="page" id="secondPage">
-        <h2>Put the </h2>
+    <div data-role="page" id="secondPage" ng-controller="InputController">
+        <div data-role="header">
+            <a href="#firstPage" data-icon="back">Back</a>
+            <h2>Create new work order</h2>
+            <a ng-click="saveWorkOrder()" href="#" data-icon="check">Save Work Order</a>
+        </div>
+
+        <div data-role="content">
+            <form>
+                <input type='text' name='ContractorName' id='ContractorName' placeholder="Contractor's Name">
+                <input type='text' name='Address' id='Address' placeholder='Job Location/Town'>
+
+
+                <textarea cols='40' rows='8' name='Remarks' id='Remarks' placeholder='Remarks'></textarea>
+            </form>
+        </div>
     </div>
 
 
