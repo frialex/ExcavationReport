@@ -37,14 +37,15 @@
         </div>
 
         <div data-role="content">               
-            <div data-role="collapsible-set">
-                <a href="#secondPage" data-role="button">Add new work order</a>
 
-                <div data-role="collapsible" ng-repreat="work in MFData.workList">
-                    <h3>{{work}}</h3>
-                    <p>{{work}}</p>
-                </div>
+            <a href="#secondPage" data-role="button">Add new work order</a>
+
+            <div ng-repeat="work in MFData.workList">
+                <p>{{$index}}</p>
+                <p>{{work.contractorName}}</p>
+                <p>{{work.address}}</p>
             </div>
+
         </div>
 
     </div>
@@ -59,11 +60,11 @@
 
         <div data-role="content">
             <form>
-                <input type='text' name='ContractorName' id='ContractorName' placeholder="Contractor's Name">
-                <input type='text' name='Address' id='Address' placeholder='Job Location/Town'>
+                <input type='text' name='contractorName' id='contractorName' placeholder="Contractor's Name" ng-model="submission.contractorName">
+                <input type='text' name='address' id='address' placeholder='Job Location/Town' ng-model="submission.address">
 
 
-                <textarea cols='40' rows='8' name='Remarks' id='Remarks' placeholder='Remarks'></textarea>
+                <textarea cols='40' rows='8' name='Remarks' id='Remarks' placeholder='Remarks' ng-model='submission.remarks'></textarea>
             </form>
         </div>
     </div>
