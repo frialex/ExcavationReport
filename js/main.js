@@ -4,7 +4,10 @@ function FormController($scope){
 	$scope.MFData = JSON.parse( localStorage["MFData"]  || '{"workList": []}' );
 
 
-	$scope.saveStateToLocal = function(){ localStorage["MFData"] = JSON.stringify($scope.MFData);};
+	$scope.saveStateToLocal = function(){ 
+		localStorage["MFData"] = JSON.stringify($scope.MFData);
+		console.log("Saved to local storage");
+	};
 
 	$scope.$on('AddNewWorkOrder', function(e, wo){
 		console.log("Received save signal");

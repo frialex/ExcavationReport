@@ -28,23 +28,25 @@
             <input name="fromDate" type="date" ng-model="MFData.from" placeholder="From">
             <label for="toDate">To</label>
             <input name="toDate" type="date" ng-model="MFData.to" placeholder="To">
+            <a ng-click="saveStateToLocal()" href="#" data-role="button">Save</a>
         </div>
 
         <div data-role="header">
             <a href="#setupPanel" data-icon="gear">Setup</a>
             <h2>Excavation Report</h2>
-            <a ng-click="saveStateToLocal()" href="#" data-icon="check">Save</a>
+            <a href="#secondPage" data-icon="plus">New work order</a>
         </div>
 
         <div data-role="content">               
 
-            <a href="#secondPage" data-role="button">Add new work order</a>
-
-            <div ng-repeat="work in MFData.workList">
-                <p>{{$index}}</p>
-                <p>{{work.contractorName}}</p>
-                <p>{{work.address}}</p>
-            </div>
+            <ul>
+                <li ng-repeat="work in MFData.workList">
+                    <p>
+                        Name: {{work.contractorName}} 
+                        Location: {{work.address}}
+                    </p>
+                </li>
+            </ul>
 
         </div>
 
@@ -54,8 +56,8 @@
     <div data-role="page" id="secondPage" ng-controller="InputController">
         <div data-role="header">
             <a href="#firstPage" data-icon="back">Back</a>
-            <h2>Create new work order</h2>
-            <a ng-click="saveWorkOrder()" href="#" data-icon="check">Save Work Order</a>
+            <h2>New WO</h2>
+            <a ng-click="saveWorkOrder()" href="#" data-icon="check">Save</a>
         </div>
 
         <div data-role="content">

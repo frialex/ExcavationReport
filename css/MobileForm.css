@@ -1,0 +1,11 @@
+#workOrder{
+	color: black;
+}
+
+#workOrder:nth-child(odd){
+	color: red;
+}
+
+#workOrder:nth-child(even){
+	color: green;
+}
