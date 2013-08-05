@@ -35,13 +35,14 @@
             <a href="#secondPage" data-icon="plus" ng-click="addModel()">New work order</a></div>
 
         <div data-role="content">
-            <ul id="workOrder" data-role="listview">
+            <ul id="workOrder" data-role="listview" data-inset="true">
                 <li ng-repeat="work in MFData.workList">
-                    <h2 class="ui-li-heading">{{work.contractorName}} @ {{work.address}}</h2>
-                    <a href="#secondPage" ng-click="editModel(work)">Edit</a>
-                    <p class="ui-li-desc">
-                        {{work.remarks}}
-                    </p>
+                    
+                    <a  href="#secondPage" ng-click="editModel(work)" data-rel="back">
+                        <h2 class="ui-li-heading">{{work.contractorName}} @ {{work.address}}</h2>
+                        <p  class="ui-li-desc">{{work.remarks}}</p>
+                    </a>
+                    
                 </li>
             </ul>
         </div>
@@ -51,10 +52,11 @@
 
 
     <div data-role="page" id="secondPage">
-        <div data-role="header">
+        <div data-role="header">  
             <a href="#firstPage" data-icon="back">Back</a>
             <h2>New WO</h2>
-            <a ng-click="deleteWorkOrder(model)" href="#firstPage" data-icon="delete">Delete</a></div>
+            <a ng-click="deleteWorkOrder(model)" href="#firstPage" data-icon="delete">Delete</a>            
+        </div>
 
         <div data-role="content">
             <form>

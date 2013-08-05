@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"edit",
+				"editWorkOrder"
+			],
+			[
+				"save",
+				"saveStateToLocal"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
 				"wo",
 				"workList"
 			],
@@ -138,10 +150,6 @@
 			[
 				"pad",
 				"padding-bottom"
-			],
-			[
-				"list",
-				"listblock"
 			]
 		]
 	},
@@ -151,7 +159,7 @@
 			"file": "js/main.js",
 			"settings":
 			{
-				"buffer_size": 594,
+				"buffer_size": 854,
 				"line_ending": "Unix"
 			}
 		},
@@ -159,24 +167,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2847,
+				"buffer_size": 3135,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Notes\n\nOption 1:\nCreate a new controller for the form. Everytime the form page is loaded, a new blank object is created at the controller. When the user saves the form - after validating - this object gets pushed in to MFData in\nthe FormController.\n\nOption 2:\n\n",
-			"settings":
-			{
-				"buffer_size": 261,
-				"line_ending": "Unix",
-				"name": "Notes"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 47.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
@@ -264,7 +263,7 @@
 				"Bookmarks: Select Next"
 			]
 		],
-		"width": 593.0
+		"width": 575.0
 	},
 	"console":
 	{
@@ -281,14 +280,16 @@
 	},
 	"file_history":
 	[
+		"/Users/frialex/Documents/Work/Mobile_Form/index.html",
+		"/Users/frialex/Documents/Work/Mobile_Form/MobileForm.sublime-project",
+		"/Users/frialex/Documents/Work/Mobile_Form/test.html",
+		"/Users/frialex/Documents/Work/Mobile_Form/README.md",
 		"/Users/frialex/Library/Application Support/Sublime Text 2/Packages/Alignment/Default (OSX).sublime-keymap",
 		"/Users/frialex/Library/Application Support/Sublime Text 2/Packages/Alignment/Base File.sublime-settings",
 		"/Users/frialex/Documents/Work/Mobile_Form/js/main.js",
 		"/Users/frialex/dev/TicTacToe/singleboard.js",
-		"/Users/frialex/Documents/Work/Mobile_Form/test.html",
 		"/Users/frialex/dev/TicTacToe/package.json",
 		"/Users/frialex/dev/TicTacToe/packages.json",
-		"/Users/frialex/Documents/Work/Mobile_Form/index.html",
 		"/Users/frialex/Documents/Work/Mobile_Form/js/FormController.js",
 		"/Users/frialex/Documents/Demo Projects/TicTacToe/util.js",
 		"/Users/frialex/Documents/Demo Projects/TicTacToe/index.html",
@@ -315,6 +316,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"h2",
+			"submission",
+			"editWorkOrder",
+			"editModel",
+			"emit",
+			"saveStateToLocal",
+			"saveStateTLocal",
+			"syncToServer",
+			"workOrder",
+			"WorkOrder",
+			"p",
+			"                    <",
 			"contractorName",
 			"h3",
 			"type",
@@ -451,7 +464,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -459,20 +472,21 @@
 					"file": "js/main.js",
 					"settings":
 					{
-						"buffer_size": 594,
+						"buffer_size": 854,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								394,
-								394
+								166,
+								166
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -485,15 +499,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 2847,
+						"buffer_size": 3135,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1650,
-								1650
+								2300,
+								2300
 							]
 						],
 						"settings":
@@ -501,32 +515,6 @@
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 699.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"settings":
-					{
-						"buffer_size": 261,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								261,
-								261
-							]
-						],
-						"settings":
-						{
-							"auto_name": "Notes",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -591,8 +579,44 @@
 				"index.html"
 			],
 			[
+				"ind",
+				"index.html"
+			],
+			[
 				"ma",
 				"js/main.js"
+			],
+			[
+				"mob",
+				"css/MobileForm.css"
+			],
+			[
+				"mo",
+				"css/MobileForm.css"
+			],
+			[
+				"",
+				"index.html"
+			],
+			[
+				"mobi",
+				"css/MobileForm.css"
+			],
+			[
+				"test",
+				"test.html"
+			],
+			[
+				"read",
+				"README.md"
+			],
+			[
+				"note",
+				"Notes"
+			],
+			[
+				"inde",
+				"index.html"
 			],
 			[
 				"no",
@@ -601,10 +625,6 @@
 			[
 				"man",
 				"js/main.js"
-			],
-			[
-				"",
-				"Notes"
 			],
 			[
 				"int",

@@ -2,7 +2,6 @@ function FormController($scope){
 
 	//If nothing in local storage, initialize empty array
 	$scope.MFData = JSON.parse( localStorage["MFData"]  || '{"workList": []}' );
-
 	
 	$scope.saveStateToLocal = function(){ 
 		localStorage["MFData"] = JSON.stringify($scope.MFData);
